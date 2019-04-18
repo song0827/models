@@ -1,37 +1,30 @@
 *******************************************************************************
-##### Structure of the directory for storing model files
-```
+Model Path Description:
 computer_vision
    |-- classification
-       |-- vgg_ssd
-            |--vgg_ssd.om
-            |--README.md
    |-- object_detect
+        |-- {vgg_ssd}
+            |--{vgg_ssd}.om
+            |--model_desc.txt
    |-- segmentation
-```
+
+Scene Name: Om file Name and upper directory name should be scenes to be used.
 *******************************************************************************
 
-##### Original Network Link:
+Original Network Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-https://github.com/weiliu89/caffe/tree/ssd
-Convert from caffe
+Pre-trained Model Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-##### Pre-trained Model Link:
+Input Description:
+//Input image size is 384x304, format is YUV420SP_U8.
 
-https://drive.google.com/open?id=0BzKzrI_SkD1_dlJpZHJzOXd3MTg
+Output Description:
+//It will recognize 20 classes of object and 1 background.
 
-##### Input Data Description:
+Custom Operator:
+//Custom operator is included or not: No
 
-The input image should be resized to 512*512 pixels
-
-##### Out Data Description:
-
-The pre-trained model is trained to detect on the COCO datasets. It will recognize 80 classes of object and 1 background.
-
-##### Custom Operator:
-
-Not included
-
-##### Versions that have been verified: 
-
-- Atlas 200
+Tested Version List:
+//-Atlas 300

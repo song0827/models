@@ -1,30 +1,30 @@
 *******************************************************************************
-##### Structure of the directory for storing model files
-```
+Model Path Description:
 computer_vision
    |-- classification
-       |-- resnet50
-            |--resnet50.om
-            |--README.md
+       |-- {resnet50}
+        |--{resnet50}.om
+        |--model_desc.txt
    |-- object_detect
    |-- segmentation
-```
+
+Scene Name: Om file Name and upper directory name should be scenes to be used.
 *******************************************************************************
 
-##### Original Network Link:
-https://github.com/KaimingHe/deep-residual-networks/blob/master/prototxt/ResNet-50-deploy.prototxt
+Original Network Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-##### Pre-trained Model Link:
-https://deepdetect.com/models/resnet/ResNet-50-model.caffemodel
+Pre-trained Model Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-##### Input Data Description:
-The input image should be resized to 224*224 pixels, and padding to 256*224 pixels, YUV420SP_U8.
+Input Description:
+//Input image size is 256x224, format is YUV420SP_U8.
 
-##### Out Data Description:
-The pre-trained model is trained for image recognition, and its results follow 1000 lables of ImageNet.
+Output Description:
+//classification, 1000 classes
 
-##### Custom Operator:
-Not included
+Custom Operator:
+//Custom operator is included or not: No
 
-##### Versions that have been verified: 
-- Atlas 200
+Tested Version List:
+//-Atlas 300

@@ -1,32 +1,30 @@
 *******************************************************************************
-##### Structure of the directory for storing model files
-```
+Model Path Description:
 computer_vision
    |-- classification
-       |-- face_detection
-            |--face_detection.om
-            |--README.md
    |-- object_detect
+        |-- {face_detection}
+            |--{face_detectin}.om
+            |--model_desc.txt
    |-- segmentation
-```
 
+Scene Name: Om file Name and upper directory name should be scenes to be used.
 *******************************************************************************
 
-##### Original Network Link:
-https://github.com/opencv/opencv/blob/master/samples/dnn/face_detector/deploy.prototxt
+Original Network Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-##### Pre-trained Model Link:
-https://github.com/opencv/opencv_3rdparty/tree/dnn_samples_face_detector_20170830
+Pre-trained Model Link:
+//Convert from caffe/tensorflow/pytorch, etc---needed
 
-##### Input Data Description:
-size: 384*304
-format: YUV420SP_U8
+Input Description:
+//Input image size is 1280*720, format is YUV420SP_U8.
 
-##### Out Data Description:
-The pre-trained model will recognize 2 types: face and others.
+Output Description:
+//It will recognize 2 classes of object(face and body) and 1 background.
 
-##### Custom Operator:
-Not included
+Custom Operator:
+//Custom operator is included or not: No
 
-##### Versions that have been verified:
-- Atlas 200
+Tested Version List:
+//-Atlas 300
